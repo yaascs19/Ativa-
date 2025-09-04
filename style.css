@@ -94,8 +94,53 @@ h2{
     
 }
 
-#boxUm{
-    border: solid 1px;
-    border-radius: 5px;
-    background-color: #555;
+#boxUm {
+    border: none;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#boxUm:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+#boxUm h1 {
+    color: #464683;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+
+#boxUm .title h1 {
+    color: #333;
+    font-size: 1em;
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+#boxUm .paragraph p {
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin-top: 12px;
+    text-align: justify;
+    font-family: sans-serif;
+}
+.futi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.futi img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
 }
