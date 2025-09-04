@@ -3,47 +3,99 @@
   padding: 0%;
 }
 
-.container {
-    height: 60px; 
-    width: 100%;
-    border: 1px solid rgb(255, 255, 255); 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
     background-color: #464683;
+    height: 60px;
+    box-sizing: border-box;
 }
 
-
-
-  nav {
-  background-color: #464683; /* Cor de fundo */
-  padding: 10px;
-  display: flex;
-  justify-content: center;
+.logo img {
+    width: 95px;
+    height: auto;
 }
 
 nav ul {
-  list-style: none; /* Remove os marcadores */
-  padding: 0;
-  margin: 0;
-  display: flex; /* Alinha os itens em linha */
-}
-
-nav ul li {
-  margin-right: 15px; /* Espaçamento entre os itens */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
 }
 
 nav ul li a {
-  text-decoration: none; /* Remove o sublinhado */
-  color: #ffffff; /* Cor do texto */
-  font-family: sans-serif; /* Fonte */
+    text-decoration: none;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-img {
-    width: 95px; 
-    height: auto;
-  }
+nav ul li a:hover {
+    color: #ccc;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #464683;
+    min-width: 150px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: none;
+    flex-direction: column;
+    gap: 0;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    padding: 10px 15px;
+    display: block;
+    border-bottom: 1px solid #555;
+}
+
+.dropdown-menu li:last-child a {
+    border-bottom: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+}
 
 
 h2{
   display: flex;
   justify-content: center;
 
+}
+
+h2{
+    align-items: center;
+    margin-top: 60px;
+    
+}
+
+.boxcontainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    background-color: #ccc;
+    
+}
+
+#boxUm{
+    border: solid 1px;
+    border-radius: 5px;
+    background-color: #555;
 }
