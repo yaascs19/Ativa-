@@ -96,7 +96,7 @@ h2{
 
 #boxUm {
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -139,8 +139,8 @@ h2{
 }
 
 .futi img{
-    width: 250px;
-    height: 150px;
+    width: 150px;
+    height: 100px;
     object-fit: cover;
     border-radius: 8px;
 }
