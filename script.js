@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
     if (form.checkValidity()) {
       alert("O formulário foi enviado com sucesso!");
       form.reset();
-    } else {
+    } 
+    
+    else {
       alert("Preencha todos os campos obrigatórios antes de enviar.");
     }
   });
