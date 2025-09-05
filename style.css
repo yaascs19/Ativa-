@@ -1,8 +1,14 @@
 *{
   margin: 0;
   padding: 0%;
+  box-sizing: border-box;
 }
-
+ 
+body{
+    background: linear-gradient(135deg, #464683 0%, #5a5aa0 100%);
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -11,13 +17,15 @@
     background-color: #464683;
     height: 60px;
     box-sizing: border-box;
+    z-index: 1000;
+   
 }
-
+ 
 .logo img {
     width: 95px;
     height: auto;
 }
-
+ 
 nav ul {
     list-style: none;
     padding: 0;
@@ -25,23 +33,25 @@ nav ul {
     display: flex;
     gap: 30px;
 }
-
+ 
 nav ul li a {
     text-decoration: none;
     color: #ffffff;
     font-family: sans-serif;
     font-weight: 500;
-    transition: color 0.3s ease;
+   
+   
 }
-
+ 
 nav ul li a:hover {
     color: #ccc;
+    display: block;
 }
-
+ 
 .dropdown {
     position: relative;
 }
-
+ 
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -53,47 +63,59 @@ nav ul li a:hover {
     flex-direction: column;
     gap: 0;
 }
-
+ 
 .dropdown-menu li {
     width: 100%;
 }
-
+ 
 .dropdown-menu li a {
     padding: 10px 15px;
     display: block;
     border-bottom: 1px solid #555;
 }
-
+ 
 .dropdown-menu li:last-child a {
     border-bottom: none;
 }
-
+ 
 .dropdown:hover .dropdown-menu {
     display: flex;
 }
-
-
+ 
+ 
 h2{
-  display: flex;
-  justify-content: center;
-
-}
-
-h2{
-    align-items: center;
-    margin-top: 60px;
-    
-}
-
-.boxcontainer{
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 200px;
-    background-color: #ccc;
-    
+    margin: 60px 0 30px 0;
+    color: #fff;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    position: relative;
 }
-
+ 
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #fff, transparent);
+    border-radius: 2px;
+}
+ 
+.boxcontainer{
+    margin: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+ 
 #boxUm {
     border: none;
     border-radius: 10px;
@@ -104,26 +126,26 @@ h2{
     text-align: center;
     transition: transform 0.3s ease;
 }
-
+ 
 #boxUm:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
-
+ 
 #boxUm h1 {
     color: #464683;
     font-size: 1.2em;
     margin-bottom: 15px;
     font-family: sans-serif;
 }
-
+ 
 #boxUm .title h1 {
     color: #333;
     font-size: 1em;
     margin-top: 15px;
     line-height: 1.4;
 }
-
+ 
 #boxUm .paragraph p {
     color: #666;
     font-size: 0.9em;
@@ -132,15 +154,232 @@ h2{
     text-align: justify;
     font-family: sans-serif;
 }
-.futi {
+.bolsa {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.futi img{
+ 
+.bolsa img{
     width: 150px;
     height: 100px;
     object-fit: cover;
     border-radius: 8px;
 }
+ 
+ 
+ 
+#boxDois {
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+ 
+#boxDois:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+ 
+#boxDois h1 {
+    color: #464683;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+ 
+#boxDois .title h1 {
+    color: #333;
+    font-size: 1em;
+    margin-top: 15px;
+    line-height: 1.4;
+}
+ 
+#boxDois .paragraph p {
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin-top: 12px;
+    text-align: justify;
+    font-family: sans-serif;
+}
+.elas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.elas img{
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+ 
+#boxTres{
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+ 
+#boxTres:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+ 
+#boxTres h1 {
+    color: #464683;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+ 
+#boxTres .title h1 {
+    color: #333;
+    font-size: 1em;
+    margin-top: 15px;
+    line-height: 1.4;
+}
+ 
+#boxTres .paragraph p {
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin-top: 12px;
+    text-align: justify;
+    font-family: sans-serif;
+}
+.rede {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.rede img{
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+ 
+ 
+.hero-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+ 
+.hero-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+ 
+ 
+ 
+@media (max-width: 768px) {
+    .boxcontainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 20px 10px;
+    }
+   
+    form {
+        margin: 20px 10px;
+        padding: 30px 20px;
+    }
+   
+    h2 {
+        font-size: 2em;
+        margin: 40px 0 20px 0;
+       
+    }
+   
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+   
+    nav ul {
+        margin-top: 15px;
+        gap: 20px;
+    }
+}
+ 
+ 
+ 
+ 
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+}
+ 
+label{
+    font-weight: bold;
+    color: #464683;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+ 
+input, select, textarea{
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: #fff;
+}
+ 
+input:focus, select:focus, textarea:focus{
+    outline: none;
+    border-color: #464683;
+    box-shadow: 0 0 10px rgba(70, 70, 131, 0.2);
+    transform: translateY(-2px);
+}
+ 
+textarea{
+    min-height: 120px;
+    resize: vertical;
+}
+ 
+button{
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #464683, #5a5aa0);
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+ 
+ 
+ 
+button:active{
+    transform: translateY(-1px);
+}
+ 
